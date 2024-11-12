@@ -1,0 +1,123 @@
+body{
+    background: linear-gradient(60deg, rgb(14, 14, 101), rgb(68, 68, 210), rgb(13, 13, 101));
+    min-height: 200vh;
+}
+
+.about{
+    margin-top: 5vw;
+    height: 50vh;
+    width: 90vw;
+    border: 1rem solid yellow;
+    box-shadow: 0 0 3rem white inset, 0 0 2rem aqua;
+    background-color: black;
+    border-radius: 4rem;
+    margin-left: 4vw;
+    opacity: 0;
+    transform: translateX(50vw);
+    animation: appear 1s forwards;
+    margin-bottom:50vh;
+}
+.about h1{
+    color: yellow;
+    font-size: 3rem;
+    text-align: center;
+    padding: 2rem;
+}
+
+.about p{
+    font-size: 1.5rem;
+    color: white;
+    padding: 4rem;
+}
+.skills span{
+    color: black;
+    background-color: aqua;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-left: 4rem;
+    border-radius: 2rem;
+    padding: 1rem 2rem;
+
+}
+
+@keyframes appear{
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.skills{
+    padding: 50vh 0 0 0;
+    min-height: 100vh;
+    animation: back linear forwards;
+    animation-timeline: view() ;
+    animation-range: entry 0% cover 20%;
+}
+
+@keyframes back {
+    to{
+        background-color: black;
+    }
+}
+
+.skill{
+    height: 40vh;
+    width: 90vw;
+    margin-left: 4vw;
+    border: 1rem solid aqua;
+    border-radius: 4rem;
+    margin-top: 20vh;
+    
+}
+
+@keyframes skill {
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.skill1{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transform: translateX(30vw);
+    opacity: 0;
+    animation: skill linear forwards;
+    animation-timeline: view();
+    animation-range: entry 20% cover 30% ;
+}
+
+
+
+.skilldiv{
+    width: 20%;
+    height: 80%;
+
+}
+
+.skilldiv img{
+    width: 100%;
+}
+.btns{
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btns button{
+    background-color: white;
+    padding: 1rem;
+    border-radius: 50%;
+    margin-left: 2rem;
+    box-shadow: 0 0 1rem white;
+}
+.btns button:hover{
+    border: 4px solid black;
+}
+
+

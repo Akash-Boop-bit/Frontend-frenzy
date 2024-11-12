@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./about.css" />
+    
+</head>
+<body>
+    <div class="nav">
+        <img src="./images/Logo/AkashLogo.png" onclick="navigate('/index.html')" alt="">
+        <div class="links">
+            <a href="./index.html">Home</a><a href="./projects.html">Projects</a>
+            <a href="./about.html">About Me</a>
+        </div>
+    </div>
+    <div class="about">
+        <h1>A Description about Me!</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae repudiandae, nostrum soluta incidunt modi perspiciatis vitae atque. Cumque provident asperiores animi quibusdam aliquam maxime. Nobis eum sit aperiam vitae eveniet?
+            Sapiente cumque excepturi blanditiis officiis aut totam sint, perferendis magni quo esse eum labore laudantium, exercitationem praesentium consectetur quae ducimus tempora quod maiores porro aperiam, delectus tempore tenetur? Veritatis, sapiente!
+            Unde quis illum aut provident recusandae illo fugit voluptas exercitationem. Fugiat adipisci dolorem, corrupti unde inventore consequuntur fugit incidunt? Pariatur iste, suscipit eius id tenetur temporibus quidem asperiores necessitatibus corporis!
+            Quidem, qui? Id, asperiores nisi temporibus et dicta dolorum. Dolore eaque numquam blanditiis ex harum exercitationem autem delectus, reiciendis, at cupiditate labore facilis repellendus vitae in, eos cum quos sapiente?
+            Natus cupiditate est possimus. Delectus laborum similique quae, ad atque fuga quaerat maiores nisi sed quia ex voluptate quos vel aperiam inventore itaque, veritatis, molestias voluptatem distinctio soluta nesciunt. Minus?
+        </p>
+    </div>
+    
+    <div class="skills">
+        <span>Skills</span>
+        <div class="skill">
+            <div id="skill" class="skill1">
+                <div class="skilldiv"><img src="./images/skills/c++.png" alt=""></div>
+                <div class="skilldiv"><img src="./images/skills/react.png" alt=""></div>
+                <div class="skilldiv"><img src="./images/skills/node.webp" alt=""></div>
+                <div class="skilldiv"><img src="./images/skills/js.avif" alt=""></div>
+            </div>
+            <div class="btns">
+                <button id="btn1" name="btn" onclick="change(1)"></button>
+                <button id="btn2" name="btn" onclick="change(2)"></button>
+                <button id="btn3" name="btn" onclick="change(3)"></button>
+                <button id="btn4" name="btn" onclick="change(4)"></button>
+                <button id="btn5" name="btn" onclick="change(5)"></button>
+            </div>
+        </div>
+    </div>
+    <div id="contact"  style="background-image: url('./images/backgrounds/background4.jpeg');" class="contact">
+        <h1>Contact Me!</h1>
+        <label for="">Your Email</label>
+        <input type="email" placeholder="Your email">
+        <label for="">Your Name</label>
+
+        <input type="Name" placeholder="Your Name">
+        <label for="">Description</label>
+
+        <input type="textarea" placeholder="Description">
+        <button>Send</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

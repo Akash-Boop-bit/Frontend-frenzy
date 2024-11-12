@@ -1,0 +1,76 @@
+body{
+    background-color: black;
+    min-height: 500vh;
+}
+
+.projects{
+    padding: 100vh 0 0 0;
+}
+
+.pro{
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20vw;
+}
+
+.proleft{
+    width: 30%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    scale: 0.5;
+    transform: translateX(-50vw);
+    animation: pro linear forwards;
+    animation-timeline: view();
+    animation-range: entry 20% cover 50%;
+}
+.promid{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+p {
+    text-align: center;
+    margin-top: 10vh;
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 700;
+    
+}
+.promid h1{
+    font-size: 3rem;
+    color: yellow;
+    padding: 4rem 0;
+}
+.proright{
+    width: 30%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    scale: 0.5;
+    transform: translateX(50vw);
+    animation: pro linear forwards;
+    animation-timeline: view();
+    animation-range: entry 20% cover 50%;
+}
+img{
+    width: 80%;
+}
+
+@keyframes pro {
+    to{
+        opacity: 1;
+        scale: 1;
+        transform: translateX(0);
+    }
+}

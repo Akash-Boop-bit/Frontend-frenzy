@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./about.css" />
+
+</head>
+<body>
+    <div class="main">
+        <video src="./videos/videos/video.webm" autoplay="true" loop></video>
+        <div class="card">
+            <div class="nav">
+                <img src="./images/Logo/AkashLogo.png" onclick="navigate('/index.html')" alt="">
+                <div class="links">
+                    <a href="./index.html">Home</a><a href="./projects.html">Projects</a>
+                    <a href="./about.html">About Me</a>
+                </div>
+            </div>
+
+            <div class="card1">
+                <div class="cardleft">
+                    <span>Hello, </span>
+                    <h1>I'm Akash Malik!</h1>
+                    <p>I am a full stack dev with around 2 to 3 years of experience in MERN stack development.<br>I am Looking for work!</p>
+                    <a href="#contact"  class="btn">Lets Connect</a>
+                </div>
+                <div class="cardimg"></div>
+            </div>
+        </div>
+    </div>
+    <div class="skills">
+        <span>Skills</span>
+        <div class="skill">
+            <div id="skill" class="skill1">
+                <div class="skilldiv"><img src="./images/skills/c++.png" alt=""></div>
+                <div class="skilldiv"><img src="./images/skills/react.png" alt=""></div>
+                <div class="skilldiv"><img src="./images/skills/node.webp" alt=""></div>
+                <div class="skilldiv"><img src="./images/skills/js.avif" alt=""></div>
+            </div>
+            <div class="btns">
+                <button id="btn1" name="btn" onclick="change(1)"></button>
+                <button id="btn2" name="btn" onclick="change(2)"></button>
+                <button id="btn3" name="btn" onclick="change(3)"></button>
+                <button id="btn4" name="btn" onclick="change(4)"></button>
+                <button id="btn5" name="btn" onclick="change(5)"></button>
+            </div>
+        </div>
+    </div>
+    <div style="background-image: url('./images/backgrounds/background3.jpeg');" id="contact" class="contact">
+        <h1>Contact Me!</h1>
+        <label for="">Your Email</label>
+        <input type="email" placeholder="Your email">
+        <label for="">Your Name</label>
+
+        <input type="Name" placeholder="Your Name">
+        <label for="">Description</label>
+
+        <input type="textarea" placeholder="Description">
+        <button>Send</button>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
